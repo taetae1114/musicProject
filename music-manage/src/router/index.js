@@ -11,7 +11,7 @@ export default new Router({
     },
     {
       path:'/Info',
-      component:resolve => require(['../pages/infoPage',resolve])
+      component:resolve => require(['../pages/infoPage'],resolve)
     }
   ]
 })
