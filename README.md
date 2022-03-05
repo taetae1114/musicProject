@@ -20,7 +20,7 @@ npm install
 #### 运行项目
 
 ```
-npm dun dev
+npm run dev
 ```
 
 ### music-server分支：后端
