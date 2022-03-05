@@ -1,4 +1,5 @@
 import axios from 'axios'
+// import router from '../router/index'
 axios.defaults.timeout = 5000 //超时时间5s
 axios.defaults.withCredentials = true //允许跨域
 // content-type响应头
@@ -40,9 +41,7 @@ export function get(url,params={}){
   return new Promise((resolve,reject)=>{
     axios.get(url, {params:params})
       .then(response=>{
-        resolve(response=>{
-
-        })
+        resolve(response.data)
       })
       .catch(err=>{
         reject(err)
@@ -54,9 +53,7 @@ export function post(url,data={}){
   return new Promise((resolve,reject)=>{
     axios.post(url, data)
       .then(response=>{
-        resolve(response=>{
-
-        })
+        resolve(response.data)
       })
       .catch(err=>{
         reject(err)

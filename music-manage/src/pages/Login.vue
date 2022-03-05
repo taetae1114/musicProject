@@ -45,6 +45,7 @@ export default {
       params.append("password",this.ruleForm.password)
       getLoginStatus(params)
       .then(res=>{
+        // console.log(res)
         if(res.code===1){
           this.$router.push('/Info')
           this.notify("登录成功","success")
