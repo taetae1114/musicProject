@@ -4,10 +4,10 @@
     <div class="ms-login">
       <el-form :model="ruleForm" :rules="rules" ref="ruleForm">
         <el-form-item prop="username">
-          <el-input v-model="ruleForm.username" placeholder="用户名"></el-input>
+          <el-input class="ms-input" v-model="ruleForm.username" placeholder="用户名"></el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input v-model="ruleForm.password" placeholder="密码" type="password"></el-input>
+          <el-input class="ms-input" v-model="ruleForm.password" placeholder="密码" type="password"></el-input>
         </el-form-item>
         <div class="login-btn">
           <el-button type="primary" @click="submitForm">登录</el-button>
@@ -47,6 +47,7 @@ export default {
       .then(res=>{
         // console.log(res)
         if(res.code===1){
+          localStorage.setItem('userName',this.ruleForm.username)
           this.$router.push('/Info')
           this.notify("登录成功","success")
         }else{
@@ -59,14 +60,17 @@ export default {
 </script>
 
 <style scoped>
+
 .login-wrap {
   position: relative;
-  background: url("../assets/img/background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-image:linear-gradient(to bottom right,rgb(114,135,254),rgb(130,88,186));
+  /*background: url("../assets/img/background.jpg");*/
+  /*background-attachment: fixed;*/
+  /*background-position: center;*/
+  /*background-size: cover;*/
   width: 100%;
   height: 100%;
+
 }
 .ms-title {
   position: absolute;
@@ -86,14 +90,19 @@ export default {
   height: 160px;
   transform: translate(-50%,-50%);
   padding: 40px;
-  border-radius: 5px;
-  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 50px 0 rgb(59,45,159);
+  background-image: linear-gradient(to bottom right,rgb(118,76,163),rgb(92,103,211));
+  /*border-radius: 5px;*/
+  /*background-color: rgba(255,255,255,0.8);*/
 }
+
 .login-btn {
   text-align: center;
 }
 .login-btn button {
   width: 100%;
   height: 36px;
+  background-color: mediumslateblue;
 }
 </style>
