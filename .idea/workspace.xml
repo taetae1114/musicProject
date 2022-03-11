@@ -5,30 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a0345c6-3a48-4d48-86fb-4171eeafa0c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/songListPic/123.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/songListPic/1599312391936程序猿.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/songPic/15990909343357.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/songPic/15991338029974.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/songPic/1599231150357陈奕迅.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/songPic/tubiao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/user.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/song/1599134158136月牙儿.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/song/1599231114624十年.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/song/1601387923463星星.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/controller/SongController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/controller/SongListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/dao/SongListMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/dao/SongMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/domain/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/domain/SongList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service/SongListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service/SongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service/impl/SongServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SongMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/controller/ListSongController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/dao/ConsumerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/dao/ListSongMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/domain/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/domain/ListSong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service/ConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service/ListSongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service/impl/ConsumerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service/impl/ListSongServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ConsumerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ListSongMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/config/SingerPicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclimb/music/config/FileConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/javaclimb/music/config/SingerPicConfig.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -99,11 +88,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service/impl" />
       <recent name="$PROJECT_DIR$/src/main/java/com/javaclimb/music/service" />
       <recent name="$PROJECT_DIR$/src/main/java/com/javaclimb/music/domain" />
       <recent name="$PROJECT_DIR$/src/main/java/com/javaclimb/music/dao" />
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/img/songPic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.javaclimb.music.dao" />
@@ -163,7 +152,7 @@
       <workItem from="1646970404448" duration="57000" />
       <workItem from="1646970644437" duration="78000" />
       <workItem from="1646970767691" duration="384000" />
-      <workItem from="1646971290707" duration="10926000" />
+      <workItem from="1646971290707" duration="11774000" />
     </task>
     <task id="LOCAL-00001" summary="歌单管理">
       <created>1646973775638</created>
@@ -186,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647002546450</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="歌曲管理">
+      <created>1647009582672</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647009582673</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="歌单管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="歌单管理" />
+    <MESSAGE value="歌曲管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="歌曲管理" />
   </component>
 </project>
