@@ -1,10 +1,10 @@
 <template>
   <div class="sidebar">
     <el-menu class="sidebar-el-menu" :default-active="onRoutes" :collapse="collapse"
-    background-color="rgb(40, 45, 67)"
-    text-color="white"
-    active-text-color="#8387ff"
-    router
+             background-color="rgb(40, 45, 67)"
+             text-color="white"
+             active-text-color="#8387ff"
+             router
     >
       <template v-for="item in items">
         <template>
@@ -62,24 +62,23 @@ export default {
 </script>
 
 <style scoped>
-  .sidebar {
-    display: block;
-    position: absolute;
-    left: 0;
-    top:70px;
-    bottom: 0;
-    background-color: rgb(40, 45, 67);
-    /*background-image:linear-gradient(to bottom right,rgb(114,135,254), rgb(94, 60, 137));*/
-    overflow-y:scroll ;
-  }
-  .sidebar-el-menu:not(.el-menu--collapse){
-    width: 150px;
-  }
-  .sidebar::-webkit-scrollbar {
-    width: 0;
-  }
-  .sidebar>ul {
-    height: 100%;
-  }
-
+.sidebar {
+  display: block;
+  position: absolute;
+  left: 0;
+  top:70px;
+  bottom: 0;
+  background-color: rgb(40, 45, 67);
+  /*background-image:linear-gradient(to bottom right,rgb(114,135,254), rgb(94, 60, 137));*/
+  overflow-y:scroll ;
+}
+.sidebar-el-menu:not(.el-menu--collapse){
+  width: 150px;
+}
+.sidebar::-webkit-scrollbar {
+  width: 0;
+}
+.sidebar>ul {
+  height: 100%;
+}
 </style>

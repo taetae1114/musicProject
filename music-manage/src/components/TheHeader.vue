@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-<!--    折叠侧边栏按钮-->
+    <!--    折叠侧边栏按钮-->
     <div class="collapse-btn" @click="collapseChange">
       <i class="el-icon-menu" ></i>
     </div>
@@ -29,7 +29,6 @@
 
 <script>
 import bus from "../assets/js/bus"
-
 export default {
   name: 'TheHeader',
   data(){
@@ -82,63 +81,59 @@ export default {
         this.$router.push('/')
       }
     }
-
   }
 }
 </script>
 
 <style scoped>
- .header {
-   position: relative;
-   background-color:#21212c;
-   /*#676bd6;*/
-   box-sizing: border-box;
-   width: 100%;
-   height: 70px;
-   font-size: 22px;
-   color: white;
- }
- .collapse-btn {
-   float:left;
-   padding: 0 21px;
-   cursor: pointer;
-   line-height: 70px;
- }
- .header .logo {
-   position: relative;
-   float: left;
-   height: 70px;
-   line-height: 70px;
- }
- .header-right {
-   float: right;
-   padding-right: 50px;
-   display: flex;
-   height: 70px;
-   align-items: center;
- }
- .btn-fullscreen {
-   transform: rotate(45deg);
-   margin-right: 5px;
-   font-size: 24px;
- }
-
- .user-avator {
-   margin-left: 20px;
- }
- .user-avator img {
-   display: block;
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-
- }
- .user-name {
-   margin-left: 10px;
-
- }
- .el-dropdown-link {
-   color: white;
-   cursor: pointer;
- }
+.header {
+  position: relative;
+  background-color:#21212c;
+  /*#676bd6;*/
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  font-size: 22px;
+  color: white;
+}
+.collapse-btn {
+  float:left;
+  padding: 0 21px;
+  cursor: pointer;
+  line-height: 70px;
+}
+.header .logo {
+  position: relative;
+  float: left;
+  height: 70px;
+  line-height: 70px;
+}
+.header-right {
+  float: right;
+  padding-right: 50px;
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+.btn-fullscreen {
+  transform: rotate(45deg);
+  margin-right: 5px;
+  font-size: 24px;
+}
+.user-avator {
+  margin-left: 20px;
+}
+.user-avator img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-name {
+  margin-left: 10px;
+}
+.el-dropdown-link {
+  color: white;
+  cursor: pointer;
+}
 </style>

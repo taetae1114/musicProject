@@ -44,23 +44,22 @@ export default {
       params.append("name",this.ruleForm.username)
       params.append("password",this.ruleForm.password)
       getLoginStatus(params)
-      .then(res=>{
-        // console.log(res)
-        if(res.code===1){
-          localStorage.setItem('userName',this.ruleForm.username)
-          this.$router.push('/Info')
-          this.notify("登录成功","success")
-        }else{
-          this.notify("登录失败","error")
-        }
-      })
+        .then(res=>{
+          // console.log(res)
+          if(res.code===1){
+            localStorage.setItem('userName',this.ruleForm.username)
+            this.$router.push('/Info')
+            this.notify("登录成功","success")
+          }else{
+            this.notify("登录失败","error")
+          }
+        })
     }
   }
 }
 </script>
 
 <style scoped>
-
 .login-wrap {
   position: relative;
   background-image:linear-gradient(to bottom right,rgb(114,135,254),rgb(130,88,186));
@@ -70,7 +69,6 @@ export default {
   /*background-size: cover;*/
   width: 100%;
   height: 100%;
-
 }
 .ms-title {
   position: absolute;
@@ -96,7 +94,6 @@ export default {
   /*border-radius: 5px;*/
   /*background-color: rgba(255,255,255,0.8);*/
 }
-
 .login-btn {
   text-align: center;
 }
