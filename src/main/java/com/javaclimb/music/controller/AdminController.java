@@ -16,13 +16,16 @@ public class AdminController {
 
     @Autowired
     private AdminService adminService;
-  @RequestMapping(value = "/admin/login/status",method = RequestMethod.POST)
+
+    @RequestMapping(value = "/admin/login/status",method = RequestMethod.POST)
     public Object loginStatus(HttpServletRequest request, HttpSession session)
     {
         JSONObject jsonObject = new JSONObject();
         String name = request.getParameter("name");
         String password = request.getParameter("password");
+        System.out.println(name + " " + password);
         boolean flag = adminService.verifyPassword(name,password);
+        System.out.println(flag);
         if(flag)
         {
             jsonObject.put(Consts.CODE,1);
