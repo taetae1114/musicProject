@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.javaclimb.music.dao.SingerMapper">
     <resultMap id="BaseResultMap" type="com.javaclimb.music.domain.Singer" >
-        <id column="id"  jdbcType="INTEGER" property="id"/>
+        <id column="id" jdbcType="INTEGER" property="id"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="sex" jdbcType="TINYINT" property="sex"/>
         <result column="pic" jdbcType="VARCHAR" property="pic"/>
@@ -13,9 +13,9 @@
         <result column="introduction" jdbcType="VARCHAR" property="introduction"/>
     </resultMap>
 
-    <select id="Base_Column_List">
+    <sql id="Base_Column_List">
         id,name,sex,pic,birth,location,introduction
-    </select>
+    </sql>
 
     <insert id="insert" parameterType="com.javaclimb.music.domain.Singer">
         insert into singer
@@ -92,35 +92,40 @@
         where id = #{id}
     </update>
 
-    <delete id = "delete" parameterType="java.lang.Integer">
+    <delete id="delete" parameterType="java.lang.Integer">
         delete from singer
-        where id = #{id}
+        where id=#{id}
     </delete>
 
-    <select id="selectByPrimaryKey" resultType="BaseResultMap" parameterType="java.lang.Integer">
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
         select
-        <include refid="Base_Column_List"></include>
+        <include refid="Base_Column_List"/>
         from singer
         where id=#{id}
     </select>
 
-    <select id="allSinger" resultType="BaseResultMap">
+    <select id="allSinger" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from singer
     </select>
 
-    <select id="singerOfName" resultType="BaseResultMap" parameterType="java.lang.String">
+    <select id="singerOfName" resultMap="BaseResultMap" parameterType="java.lang.String">
         select
         <include refid="Base_Column_List"/>
         from singer
         where name like #{name}
     </select>
 
-    <select id="singerOfSex" resultType="BaseResultMap" parameterType="java.lang.Integer">
+    <select id="singerOfSex" resultMap="BaseResultMap" parameterType="java.lang.Integer">
         select
         <include refid="Base_Column_List"/>
         from singer
-        where sex like #{sex}
+        where sex = #{sex}
     </select>
+
 </mapper>
+
+
+
+
