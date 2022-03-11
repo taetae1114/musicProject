@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    首页
+    <swiper />
   </div>
 </template>
 
 <script>
-
+import Swiper from "../components/Swiper";
 export default {
   name: 'home',
   components: {
