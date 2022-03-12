@@ -1,0 +1,168 @@
+@charset "UTF-8";
+.the-header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 80px;
+  margin: 0;
+  background-color: #fefefe;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.header-logo {
+  margin: 0 10px;
+  font-size: 26px;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.header-logo .icon {
+  width: 46.6666666667px;
+  height: 46.6666666667px;
+  font-size: 46.6666666667px;
+  color: #000000;
+  fill: currentColor;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+}
+
+/*nav*/
+.navbar {
+  height: 70px;
+  white-space: nowrap;
+}
+.navbar li {
+  margin: 0 10px;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #67757f;
+  text-align: center;
+  border-bottom: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/*搜索*/
+.header-search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.header-search input {
+  height: 35px;
+  width: 270px;
+  font-size: 14px;
+  border: 0;
+  text-indent: 10px;
+  background-color: #ebeef0;
+}
+.header-search input:focus {
+  outline: none;
+}
+.header-search .search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #30a4fc;
+  width: 60px;
+  height: 35px;
+  cursor: pointer;
+}
+.header-search .search-btn .icon {
+  width: 1.2em;
+  height: 1.2em;
+  font-size: 1.2em;
+  color: #ffffff;
+  fill: currentColor;
+  overflow: hidden;
+  position: relative;
+}
+
+/*用户*/
+.header-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.header-right #user {
+  overflow: hidden;
+  width: 46.6666666667px;
+  height: 46.6666666667px;
+  border-radius: 50%;
+  margin: 0 25px;
+  cursor: pointer;
+}
+.header-right #user img {
+  width: 100%;
+}
+
+.menu {
+  display: none;
+  line-height: 0px;
+  position: absolute;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  width: 150px;
+  padding: 7px 0px;
+  border-radius: 4px;
+  top: 80px;
+  right: -20px;
+  z-index: 5;
+  text-align: center;
+  cursor: pointer;
+}
+.menu li {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.menu li:hover {
+  background-color: #95d2f6;
+  color: #ffffff;
+}
+.menu :nth-child(1):before {
+  content: " ";
+  display: block;
+  /*独占一行*/
+  position: absolute;
+  right: 45px;
+  top: -5px;
+  /*果断的露出上半部分*/
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  /*一个正方形倾斜四十五度就是三角了但是要把下半部分藏起来*/
+  transform: rotate(45deg);
+}
+
+.show {
+  display: block;
+}
+
+.active {
+  color: #95d2f6 !important;
+  border-bottom: 5px solid #95d2f6 !important;
+}

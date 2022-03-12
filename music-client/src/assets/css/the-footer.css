@@ -1,0 +1,13 @@
+.the-footer {
+  width: 100%;
+  height: 180px;
+  background-color: #e6ecf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.the-footer p {
+  height: 30px;
+}

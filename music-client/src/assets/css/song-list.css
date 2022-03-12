@@ -1,0 +1,35 @@
+.song-list {
+  margin: 30px 150px;
+  margin-top: 90px;
+  padding-bottom: 50px;
+  min-width: 800px;
+  background-color: #ffffff;
+}
+
+.song-list-header {
+  width: 100%;
+  padding: 0 40px;
+}
+.song-list-header li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 40px 20px 15px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #67757f;
+  border-bottom: none;
+  cursor: pointer;
+}
+.song-list-header li.active {
+  color: #000000;
+  font-weight: 600;
+  border-bottom: 4px solid #000000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}

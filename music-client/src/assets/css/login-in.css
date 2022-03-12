@@ -1,0 +1,27 @@
+.login {
+  position: absolute;
+  margin-left: 850px;
+  width: 300px;
+  height: 210px;
+  top: 130px;
+  padding: 30px 50px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.login .login-head {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.login .login-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.login .login-btn button {
+  display: block;
+  width: 50%;
+}

@@ -1,0 +1,47 @@
+.song-lyric {
+  margin: auto;
+  margin-top: 90px;
+  width: 700px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 0 20px 50px 20px;
+  font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.song-lyric .lyric-title {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid #000000;
+}
+.song-lyric .has-lyric {
+  font-size: 18px;
+  padding: 30px 0;
+  width: 100%;
+  min-height: 170px;
+  text-align: center;
+}
+.song-lyric .has-lyric li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.song-lyric .no-lyric {
+  margin: 200px 0;
+  width: 100%;
+  text-align: center;
+}
+.song-lyric .no-lyric span {
+  font-size: 18px;
+  text-align: center;
+}
+
+.lyric-fade-enter,
+.lyric-fade-leave-to {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.lyric-fade-enter-active,
+.lyric-fade-leave-active {
+  transition: all 0.3s ease;
+}

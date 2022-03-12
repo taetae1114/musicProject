@@ -1,0 +1,61 @@
+.content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px 40px;
+  min-width: 700px;
+}
+.content .title {
+  text-align: center;
+}
+.content > ul {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.content > ul > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 20px;
+  cursor: pointer;
+}
+
+.song-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.song-item .item-index {
+  width: 5%;
+}
+.song-item .item-title {
+  width: 30%;
+}
+.song-item .item-name {
+  width: 25%;
+}
+.song-item .item-intro {
+  width: 40%;
+}
+
+.is-play {
+  color: #30a4fc;
+  font-weight: bold;
+}
+
+.icon {
+  width: 1.3em;
+  height: 1.3em;
+  font-size: 1.3em;
+  color: #30a4fc;
+  fill: currentColor;
+  overflow: hidden;
+  position: relative;
+  vertical-align: -0.3em;
+  right: 5px;
+}

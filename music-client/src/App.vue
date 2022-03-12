@@ -1,24 +1,36 @@
 <template>
   <div id="app">
-    <router-view class="music-content"></router-view>
+    <the-header />
+    <router-view class="music-content"/>
+    <song-audio/>
+    <the-aside/>
+    <play-bar/>
+    <scroll-top/>
+    <the-footer/>
   </div>
 </template>
 
 <script>
+import TheHeader from './components/TheHeader';
+import ScrollTop from './components/ScrollTop';
+import TheFooter from './components/TheFooter';
+import SongAudio from './components/SongAudio';
+import TheAside from './components/TheAside';
+import PlayBar from './components/PlayBar';
+
 export default {
   name: 'App',
-  components:{
+  components: {
+    TheHeader,
+    ScrollTop,
+    TheFooter,
+    SongAudio,
+    TheAside,
+    PlayBar
   }
 }
 </script>
 
-<style>
-#app {
-  background-color: #e6ecf0;
-  display: flex;
-}
-
-.music-content {
-  flex: 1;
-}
+<style  scoped>
+@import './assets/css/app.css';
 </style>

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.singer-album {
+  margin-top: 70px;
+  padding-top: 150px;
+  background-color: #e6ecf0;
+}
+.singer-album::before {
+  /*背景*/
+  content: "";
+  background-color: #95d2f6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 220px;
+}
+
+/*左*/
+.album-slide {
+  float: left;
+  width: 400px;
+}
+.album-slide .singer-img {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  top: -100px;
+  left: 50px;
+  border-radius: 10%;
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+}
+.album-slide .singer-img img {
+  width: 100%;
+}
+.album-slide .info {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -80px;
+  padding: 30px 40px 30px 60px;
+}
+.album-slide .info li {
+  width: 100%;
+  height: 40px;
+}
+
+/*右*/
+.album-content {
+  margin-left: 300px;
+  padding: 30px 100px;
+}
+.album-content .intro {
+  font-size: 20px;
+}
+.album-content .intro span {
+  color: rgba(0, 0, 0, 0.5);
+}
+.album-content .content {
+  margin-top: 50px;
+}

@@ -1,0 +1,124 @@
+.play-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.play-bar .item-up {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  cursor: pointer;
+}
+.play-bar .kongjian {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  min-width: 1000px;
+  background-color: #fefefe;
+}
+.play-bar .kongjian .item {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+.play-bar .kongjian .item .icon.active {
+  color: red !important;
+}
+.play-bar .kongjian .item .volume {
+  position: absolute;
+  display: none;
+  height: 100px;
+  top: -110px;
+  right: 22px;
+}
+.play-bar .kongjian .item .show-volume {
+  display: block;
+}
+.play-bar .kongjian .item-img {
+  width: 60px;
+  height: 60px;
+}
+.play-bar .kongjian .item-img img {
+  width: 100%;
+}
+.play-bar .kongjian .playing-speed {
+  height: 50px;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.play-bar .kongjian .playing-speed .current-time,
+.play-bar .kongjian .playing-speed .left-time {
+  width: 70px;
+  text-align: center;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 500;
+  top: -10px;
+}
+.play-bar .kongjian .playing-speed .progress-box {
+  flex: 1;
+}
+.play-bar .kongjian .playing-speed .progress-box .item-song-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 20px;
+  line-height: 10px;
+}
+.play-bar .kongjian .playing-speed .progress-box .progress {
+  width: 100%;
+  background: #a9dbf9;
+  height: 6px;
+}
+.play-bar .kongjian .playing-speed .progress-box .progress .bg {
+  height: 100%;
+}
+.play-bar .kongjian .playing-speed .progress-box .progress .bg .cur-progress {
+  height: 100%;
+  background: #30a4fc;
+}
+.play-bar .kongjian .playing-speed .progress-box .progress .idot {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #000000;
+  top: -11px;
+  vertical-align: middle;
+}
+
+.turn {
+  transform: rotate(180deg);
+}
+
+.show {
+  bottom: -60px;
+}
+
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+  font-size: 1.2em;
+  color: #000000;
+  fill: currentColor;
+  overflow: hidden;
+  position: relative;
+}

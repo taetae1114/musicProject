@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*评论*/
+.comment h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #000000;
+}
+.comment .comment-msg {
+  display: flex;
+}
+.comment .comment-msg .comment-img {
+  width: 70px;
+}
+.comment .comment-msg .comment-img img {
+  width: 100%;
+}
+.comment .comment-msg .comment-input {
+  margin-left: 10px;
+  flex: 1;
+}
+.comment .sub-btn {
+  margin-top: 10px;
+  margin-left: 90%;
+}
+
+/*热门评论*/
+.popular {
+  width: 100%;
+}
+.popular > li {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  display: flex;
+}
+.popular > li .popular-img {
+  width: 50px;
+}
+.popular > li .popular-img img {
+  width: 100%;
+}
+.popular > li .popular-msg {
+  padding: 0 20px;
+  flex: 1;
+}
+.popular > li .popular-msg li {
+  width: 100%;
+}
+.popular > li .popular-msg .time {
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.popular > li .popular-msg .content {
+  font-size: 1rem;
+}
+.popular > li .up {
+  width: 50px;
+  line-height: 60px;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  color: #000000;
+  fill: currentColor;
+  overflow: hidden;
+  position: relative;
+}

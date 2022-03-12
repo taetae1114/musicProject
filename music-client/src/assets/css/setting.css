@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.setting {
+  margin: 30px 10%;
+  margin-top: 90px;
+  min-height: 65vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+/* 左侧导航栏 */
+.leftCol {
+  margin-top: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 200px;
+}
+.leftCol .settingsMainHeader {
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.setting-aside {
+  width: 100%;
+}
+.setting-aside li {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.setting-aside li:hover {
+  background-color: #30a4fc;
+  color: #ffffff;
+}
+.setting-aside li:active {
+  background-color: #a9dbf9;
+}
+
+.activeColor {
+  background-color: #a9dbf9 !important;
+  color: #ffffff;
+}
+
+/* 右边内容 */
+.contentCol {
+  flex: 1;
+  padding-top: 20px;
+}
