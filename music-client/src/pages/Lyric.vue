@@ -60,6 +60,6 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style >
 @import '../assets/css/lyric.css';
 </style>

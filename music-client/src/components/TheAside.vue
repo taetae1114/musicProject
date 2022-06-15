@@ -13,6 +13,7 @@
 </template>
 <script>
 import {mapGetters} from 'vuex';
+import { getCollectOfUserId } from '../api/index';
 
 export default {
     name: 'the-aside',
@@ -20,7 +21,10 @@ export default {
         ...mapGetters([
             'showAside',         //是否显示播放中的歌曲列表
             'listOfSongs',       //当前歌曲列表
-            'id'                //播放中的音乐id
+            'id',                //播放中的音乐id
+            'loginIn',              //用户是否已登录
+            'userId',               //当前登录用户的id
+            'isActive',             //当前播放的歌曲是否已收藏
         ])
     },
     mounted(){
@@ -49,6 +53,18 @@ export default {
             this.$store.commit('setTitle',this.replaceFName(name));
             this.$store.commit('setArtist',this.replaceLName(name));
             this.$store.commit('setLyric',this.parseLyric(lyric));
+            this.$store.commit('setIsActive',false);
+            if(this.loginIn){
+                getCollectOfUserId(this.userId)
+                    .then(res =>{
+                        for(let item of res){
+                            if(item.songId == id){
+                                this.$store.commit('setIsActive',true);
+                                break;
+                            }
+                        }
+                    })
+            }
         },
         //解析歌词
         parseLyric(text){
@@ -83,6 +99,6 @@ export default {
     }
 }
 </script>
-<style   scoped>
+<style >
 @import '../assets/css/the-aside.css';
 </style>

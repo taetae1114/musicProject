@@ -2,6 +2,7 @@
     <div class="content">
        <h1 class="title">
            <slot name="title"></slot>
+           <hr/>
        </h1>
        <ul>
            <li>
@@ -37,6 +38,6 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style>
 @import '../assets/css/album-content.css';
 </style>

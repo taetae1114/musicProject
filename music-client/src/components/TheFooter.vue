@@ -9,6 +9,6 @@ export default {
     name: 'the-footer'
 }
 </script>
-<style  scoped>
+<style>
 @import '../assets/css/the-footer.css';
 </style>

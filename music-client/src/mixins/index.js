@@ -1,6 +1,13 @@
-import {likeSongOfName} from '../api/index';
+import {mapGetters} from 'vuex';
+import {likeSongOfName,getCollectOfUserId } from '../api/index';
 
 export const mixin = {
+    computed: {
+        ...mapGetters([            
+            'loginIn',              //用户是否已登录
+            'userId',               //当前登录用户的id
+        ])
+    },
     methods: {
         //提示信息
         notify(title,type) {
@@ -12,7 +19,7 @@ export const mixin = {
 
         //获取图片地址
         attachImageUrl (srcUrl) {
-            return srcUrl? this.$store.state.configure.HOST+srcUrl : '../assets/img/user.jpg';
+            return srcUrl? this.$store.state.configure.HOST+srcUrl : this.$store.state.configure.HOST+'/img/user.jpg';
         },
         //根据歌手名字模糊查询歌曲
         getSong() {
@@ -51,6 +58,18 @@ export const mixin = {
             this.$store.commit('setTitle',this.replaceFName(name));
             this.$store.commit('setArtist',this.replaceLName(name));
             this.$store.commit('setLyric',this.parseLyric(lyric));
+            this.$store.commit('setIsActive',false);
+            if(this.loginIn){
+                getCollectOfUserId(this.userId)
+                    .then(res =>{
+                        for(let item of res){
+                            if(item.songId == id){
+                                this.$store.commit('setIsActive',true);
+                                break;
+                            }
+                        }
+                    })
+            }
         },
         //解析歌词
         parseLyric(text){
@@ -81,6 +100,10 @@ export const mixin = {
                 return a[0] - b[0];
             });
             return result;
+        },
+        //获取生日
+        attachBirth(val){
+            return val.substr(0,10);
         }
     }
 }

@@ -25,6 +25,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @import '../../assets/css/search-song.css';
 </style>

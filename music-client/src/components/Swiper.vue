@@ -23,6 +23,6 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style>
 @import '../assets/css/swiper.css';
 </style>
